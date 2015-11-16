@@ -1,0 +1,14 @@
+{
+    "name": "parisliakos/dolibarr-php-client",
+    "description": "PHP wrapper for the dolibarr API",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paris Liakos",
+            "email": "rootatwc@gmail.com"
+        }
+    ]
+}
