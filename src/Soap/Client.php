@@ -59,8 +59,6 @@ class Client {
    *   The password to login with.
    * @param string $apiKey
    *   The key set in dolibarr backend.
-   * @param array $enabledServers
-   *   An array of enabled servers. If not specified all servers will be enabled
    */
   public function __construct($dolibarUrl, $username, $password, $apiKey = '') {
     $this->authentication = [
@@ -255,7 +253,7 @@ class Client {
   }
 
   /**
-   * @return array
+   * @return \DolibarPhpClient\Soap\ComplexType\Contact[]
    */
   public function getContactsForThirdParty($thirdPartyId) {
     $response = $this->getClientForServer('contact')
