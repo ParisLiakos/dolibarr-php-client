@@ -2,42 +2,43 @@
 
 namespace DolibarPhpClient\Soap\ComplexType;
 
-class ThirdPartyWithUser extends \ArrayObject {
+class ThirdPartyWithUser extends \ArrayObject
+{
 
-  public function __construct(array $data) {
-    $defaults = array_fill_keys([
-      'name' => NULL,
-      'firstname' => NULL,
-      'name_thirdparty' => NULL,
-      'ref_ext' => NULL,
-      'client' => NULL,
-      'fournisseur' => NULL,
-      'address' => NULL,
-      'zip' => NULL,
-      'town' => NULL,
-      'country_id' => NULL,
-      'country_code' => NULL,
-      'phone' => NULL,
-      'phone_mobile' => NULL,
-      'fax' => NULL,
-      'email' => NULL,
-      'url' => NULL,
-      'profid1' => NULL,
-      'profid2' => NULL,
-      'profid3' => NULL,
-      'profid4' => NULL,
-      'profid5' => NULL,
-      'profid6' => NULL,
-      'capital' => NULL,
-      'tva_assuj' => NULL,
-      'tva_intra' => NULL,
-      'login' => NULL,
-      'password' => NULL,
-      'group_id' => NULL,
-    ], NULL);
-    // Merge defaults.
-    $data += $defaults;
-    parent::__construct($data, \ArrayObject::ARRAY_AS_PROPS);
-  }
-
+    public function __construct(array $data)
+    {
+        $defaults = array_fill_keys([
+            'name' => null,
+            'firstname' => null,
+            'name_thirdparty' => null,
+            'ref_ext' => null,
+            'client' => null,
+            'fournisseur' => null,
+            'address' => null,
+            'zip' => null,
+            'town' => null,
+            'country_id' => null,
+            'country_code' => null,
+            'phone' => null,
+            'phone_mobile' => null,
+            'fax' => null,
+            'email' => null,
+            'url' => null,
+            'profid1' => null,
+            'profid2' => null,
+            'profid3' => null,
+            'profid4' => null,
+            'profid5' => null,
+            'profid6' => null,
+            'capital' => null,
+            'tva_assuj' => null,
+            'tva_intra' => null,
+            'login' => null,
+            'password' => null,
+            'group_id' => null,
+        ], null);
+        // Merge defaults.
+        $data += $defaults;
+        parent::__construct($data, \ArrayObject::ARRAY_AS_PROPS);
+    }
 }

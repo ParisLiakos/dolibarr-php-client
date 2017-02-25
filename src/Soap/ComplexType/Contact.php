@@ -2,47 +2,48 @@
 
 namespace DolibarPhpClient\Soap\ComplexType;
 
-class Contact extends \ArrayObject {
+class Contact extends \ArrayObject
+{
 
-  public function __construct(array $data) {
-    $defaults = array_fill_keys([
-      'id' => NULL,
-      'ref_ext' => NULL,
-      'lastname' => NULL,
-      'firstname' => NULL,
-      'address' => NULL,
-      'zip' => NULL,
-      'town' => NULL,
-      'state_id' => NULL,
-      'state_code' => NULL,
-      'state' => NULL,
-      'country_id' => NULL,
-      'country_code' => NULL,
-      'country' => NULL,
-      'socid' => NULL,
-      'status' => NULL,
-      'phone_pro' => NULL,
-      'fax' => NULL,
-      'phone_perso' => NULL,
-      'phone_mobile' => NULL,
-      'code' => NULL,
-      'email' => NULL,
-      'birthday' => NULL,
-      'default_lang' => NULL,
-      'note' => NULL,
-      'no_email' => NULL,
-      'ref_facturation' => NULL,
-      'ref_contrat' => NULL,
-      'ref_commande' => NULL,
-      'ref_propal' => NULL,
-      'user_id' => NULL,
-      'user_login' => NULL,
-      'civility_id' => NULL,
-      'poste' => NULL,
-    ], NULL);
-    // Merge defaults.
-    $data += $defaults;
-    parent::__construct($data, \ArrayObject::ARRAY_AS_PROPS);
-  }
-
+    public function __construct(array $data)
+    {
+        $defaults = array_fill_keys([
+            'id' => null,
+            'ref_ext' => null,
+            'lastname' => null,
+            'firstname' => null,
+            'address' => null,
+            'zip' => null,
+            'town' => null,
+            'state_id' => null,
+            'state_code' => null,
+            'state' => null,
+            'country_id' => null,
+            'country_code' => null,
+            'country' => null,
+            'socid' => null,
+            'status' => null,
+            'phone_pro' => null,
+            'fax' => null,
+            'phone_perso' => null,
+            'phone_mobile' => null,
+            'code' => null,
+            'email' => null,
+            'birthday' => null,
+            'default_lang' => null,
+            'note' => null,
+            'no_email' => null,
+            'ref_facturation' => null,
+            'ref_contrat' => null,
+            'ref_commande' => null,
+            'ref_propal' => null,
+            'user_id' => null,
+            'user_login' => null,
+            'civility_id' => null,
+            'poste' => null,
+        ], null);
+        // Merge defaults.
+        $data += $defaults;
+        parent::__construct($data, \ArrayObject::ARRAY_AS_PROPS);
+    }
 }
